@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+  <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+
+    $(".sec1").hide();
+    $(".sec2").hide();
+    $(".sec3").hide();
+    $(".box2").hide();
+    $(".dostuff").click(function(){
+      $(".box").fadeOut(2000).delay(200).queue(function(next) {$(".box2").fadeIn(2000).delay(200);
+    });
+    $(".sec1").fadeIn();
+    });
+    $(".btn1").click(function(){
+      $(".sec1").fadeOut(2000).delay(200).queue(function(next) {$(".sec2").fadeIn(2000).delay(200);
+    });
+
+    });
+    $(".btn2").click(function(){
+      $(".sec2").fadeOut(2000).delay(200).queue(function(next) {$(".sec3").fadeIn(2000).delay(200);
+    });
+    });
+  });
+  </script>
+  <script>
+  $(function(){
+      var $select = $(".1-31");
+      for (i=1;i<=31;i++){
+          $select.append($('<option></option>').val(i).html(i))
+      }
+  });
+  </script>
+<meta charset="utf-8">
+<title>Wurk</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+
+<body>
+
+  <div class="header">
+    <div id="logonshit">
+      <img src="{{ url_for('static', filename='css/img/Wurk2.png') }}" style="width:100px;height:90px;align:right;"</img>
+      <div class="nav">
+          <ul id = "navbar">
+            <li><a href="/">Home</a></li>
+            <li><a href="ContactUs">Contact Us</a></li>
+            <li><a href="MeetTheTeam">Meet The Team</a></li>
+            <li><a href="BodyOfWork">Body Of Work</a></li>
+      </ul>
+        </div>
+          </div>
+      <h1>Wurk</h1>
+      <h2>Work less with Wurk</h2>
+
+
+  </div>
+  <div class="box2">
+    <form action="/createbooking" method="POST">
+      <div class = "sec2">
+        <p>Good! Now select a month and day for your booking</p>
+        <label>Month: </label>
+        <select id="month" name = "month">
+       <option value="jan">January</option>
+       <option value="feb">Febuary</option>
+       <option value="mar">March</option>
+       <option value="ap">April</option>
+       <option value="may">May</option>
+       <option value="june">June</option>
+       <option value="july">July</option>
+       <option value="aug">August</option>
+       <option value="sep">September</option>
+       <option value="oct">October</option>
+       <option value="nov">November</option>
+       <option value="dec">December</option>
+       </select><br></br>
+       <label>Day: </label>
+        <select name = "day" class= "1-31"></select><br></br>
+         <input type = "submit" value="Next"></input>
+      </div>
+
+    </form>
+</body>
+</html>

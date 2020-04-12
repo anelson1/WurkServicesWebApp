@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Wurk</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+
+<body>
+
+  <div class="header">
+    <div id="logonshit">
+      <img src="{{ url_for('static', filename='css/img/Wurk2.png') }}" style="width:100px;height:90px;align:right;"</img>
+      <div class="nav">
+          <ul id = "navbar">
+            <li><a href="/">Home</a></li>
+            <li><a href="ContactUs">Contact Us</a></li>
+            <li><a href="MeetTheTeam">Meet The Team</a></li>
+            <li><a href="BodyOfWork">Body Of Work</a></li>
+      </ul>
+        </div>
+          </div>
+      <h1>Wurk</h1>
+      <h2>Work less with Wurk</h2>
+
+  </div>
+
+  <div class="box">
+    <div id="main">
+    <h4>Congratulations!</h4>
+    <h3>Your booking has been made. Your booking ID is: {{BID}}</h3>
+    <h5>Note: Booking ID is case sensitive</h5>
+    <h5>Please save your booking ID somewhere secure</h5>
+  </div>
+</div>
+</body>
+</html>

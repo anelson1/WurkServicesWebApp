@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+  <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+  $(function(){
+      var $select = $(".1-31");
+      for (i=1;i<=31;i++){
+          $select.append($('<option></option>').val(i).html(i))
+      }
+  });
+  </script>
+<meta charset="utf-8">
+<title>Wurk</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+
+<body>
+
+  <div class="header">
+    <div id="logonshit">
+      <img src="{{ url_for('static', filename='css/img/Wurk2.png') }}" style="width:100px;height:90px;align:right;"</img>
+      <div class="nav">
+          <ul id = "navbar">
+            <li><a href="/">Home</a></li>
+            <li><a href="ContactUs">Contact Us</a></li>
+            <li><a href="MeetTheTeam">Meet The Team</a></li>
+            <li><a href="BodyOfWork">Body Of Work</a></li>
+      </ul>
+        </div>
+          </div>
+      <h1>Wurk</h1>
+      <h2>Work less with Wurk</h2>
+
+  </div>
+  <div class="box">
+  <div id="data">
+    <p>Enter First name for teacher</p>
+    <form action="/admino" method = 'post'>
+      <input type="text" id="FN" name="FN" placeholder="First Name"></input><br></br>
+      <p>Enter Last name for teacher</p>
+      <input type="text" id="LN" name="LN" placeholder="Last Name"></input><br></br>
+      <p>Type of teacher:</p>
+      <select id="TOT" name = "TOT">
+      <option value="Acedemic Tutoring">Acedemic Tutoring</option>
+      <option value="Music Lessons">Music Lessons</option>
+      <option value="ACT and SAT Prep">ACT and SAT Prep</option>
+      <option value="Sports Coaching">Sports Coaching</option>
+      </select>
+      <input type="submit" value="Confirm">
+  </form>
+
+
+  </div>
+  </div>
+  {%for i in range(0, len)%}
+    {%for j in range(0,len2)%}
+    <li>{{records[i][j]}}</li>
+  {%endfor%}
+  <br></br>
+    {%endfor%}
+</body>
+</html>

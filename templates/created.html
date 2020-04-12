@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Wurk</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+
+<body>
+
+  <div class="header">
+    <div id="logonshit">
+      <img src="{{ url_for('static', filename='css/img/Wurk2.png') }}" style="width:100px;height:90px;align:right;"</img>
+      <div class="nav">
+          <ul id = "navbar">
+            <li><a href="/">Home</a></li>
+            <li><a href="ContactUs">Contact Us</a></li>
+            <li><a href="MeetTheTeam">Meet The Team</a></li>
+            <li><a href="BodyOfWork">Body Of Work</a></li>
+      </ul>
+        </div>
+          </div>
+      <h1>Wurk</h1>
+      <h2>Work less with Wurk</h2>
+
+  </div>
+  <div id="box">
+  <div id="data">
+    <p>Your availability has been updated</p>
+    <form action="/{{lastpage}}">
+      <input type="submit" value="Go Back">
+      <br></br>
+  </form>
+  </div>
+  </div>
+</body>
+</html>

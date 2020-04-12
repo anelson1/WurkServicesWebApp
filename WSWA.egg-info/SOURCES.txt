@@ -1,0 +1,7 @@
+setup.py
+WSWA.egg-info/PKG-INFO
+WSWA.egg-info/SOURCES.txt
+WSWA.egg-info/dependency_links.txt
+WSWA.egg-info/not-zip-safe
+WSWA.egg-info/requires.txt
+WSWA.egg-info/top_level.txt

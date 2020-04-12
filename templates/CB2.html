@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+  <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    $(".sec1").fadeIn(4000);
+    $(".sec2").hide();
+    $(".sec3").hide();
+    $(".dostuff").click(function(){
+      $(".box").fadeOut(2000).delay(200).queue(function(next) {$(".box2").fadeIn(2000).delay(200);
+    });
+    $(".sec1").fadeIn();
+    });
+    $(".btn1").click(function(){
+      $(".sec1").fadeOut(2000).delay(200).queue(function(next) {$(".sec2").fadeIn(2000).delay(200);
+    });
+
+    });
+    $(".btn2").click(function(){
+      $(".sec2").fadeOut(2000).delay(200).queue(function(next) {$(".sec3").fadeIn(2000).delay(200);
+    });
+    });
+  });
+  </script>
+  <script>
+  $(function(){
+      var $select = $(".1-31");
+      for (i=1;i<=31;i++){
+          $select.append($('<option></option>').val(i).html(i))
+      }
+  });
+  </script>
+<meta charset="utf-8">
+<title>Wurk</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+
+<body>
+
+  <div class="header">
+    <div id="logonshit">
+      <img src="{{ url_for('static', filename='css/img/Wurk2.png') }}" style="width:100px;height:90px;align:right;"</img>
+      <div class="nav">
+          <ul id = "navbar">
+            <li><a href="/">Home</a></li>
+            <li><a href="ContactUs">Contact Us</a></li>
+            <li><a href="MeetTheTeam">Meet The Team</a></li>
+            <li><a href="BodyOfWork">Body Of Work</a></li>
+      </ul>
+        </div>
+          </div>
+      <h1>Wurk</h1>
+      <h2>Work less with Wurk</h2>
+
+  </div>
+  <div class="box2">
+    <form action="/createbooking2" method="POST">
+      <div class = "sec1" style="display: none;">
+        <p>Good! Here are the teachers that are available this day</p>
+        <select id = "teachers" name = "teachers">
+          {% for teacher in nameList %}
+          <option value="{{teacher[0]}}">{{teacher[0]}}  {{teacher[1]}}</option>
+          {% endfor %}
+        </select>
+        <div class = "sec2">
+          <input type="text" id="name" name="name" value = "{{name}}"></input>
+          <input type="text" id="month" name="month" value = {{month}}></input>
+          <input type="text" id="day" name="day" value = "{{day}}"></input>
+          <input type="text" id="TOB" name="TOB" value = "{{TOB}}"></input>
+
+        </div>
+        <input type = "submit" value = "Next"></button>
+      </div>
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,172 @@
+@charset "utf-8";
+@font-face{
+	font-family: thathuntershit;
+	src: url(font/KozGoPro-Light.otf)
+}
+@font-face{
+	font-family: thathuntershititalics;
+	src: url(font/KozGoPro-Light.otf);
+	font-style: italic;
+}
+.header {
+
+	background-position: center center;
+	background-size: cover;
+	height: auto;
+	width: auto;
+	padding: 10px;
+	z-index: -1;
+}
+#Service{
+	text-align: left;
+}
+.box{
+	border-style: solid;
+	border-color: black;
+	margin-right: 300px;
+	margin-left: 300px;
+	box-shadow: 5px 5px 10px #8700dc;
+	padding: 10px;
+}
+#main{
+	text-align: center;
+}
+.register
+{
+	text-align: right;
+}
+.register.input{
+	text-align: center;
+}
+.login{
+	text-align: center;
+}
+.textinbox{
+	text-align: center;
+}
+.guy{
+
+}
+header.img{
+	width: 10%;
+	height: 10%;
+}
+h1{
+	color: #000;
+	font-family: thathuntershititalics;
+	font-size: 70px;
+	font-weight: 400;
+	line-height: 60px;
+	text-align: center;
+}
+
+h2{
+	color: black;
+	font-family: thathuntershit;
+	font-size: 30px;
+	font-weight: 400;
+	z-index: 1;
+	text-align: center;
+}
+h3{
+	color: black;
+	font-family: thathuntershit;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 60px;
+	z-index: 1;
+	text-align: center;
+	margin: 3px;
+}
+h5{
+	color: black;
+	font-family: thathuntershit;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 60px;
+	z-index: 1;
+	text-align: center;
+	margin: 3px;
+}
+h7{
+	color: black;
+	font-family: thathuntershit;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 60px;
+	z-index: 1;
+	text-align: left;
+	margin: 3px;
+}
+h4{
+	color: black;
+	font-family: thathuntershit;
+	font-size: 25px;
+	font-weight: 400;
+	line-height: 60px;
+	z-index: 1;
+	text-align: center;
+	margin: 3px;
+}
+p,label{
+	color: black;
+	font-family: thathuntershit;
+	font-size: 15px;
+	font-weight: 100;
+	line-height: auto;
+	margin:0 auto;
+	width: 100%;
+}
+MID{
+	color: #8700dc;
+	font-family: thathuntershit;
+	font-size: 15px;
+	font-weight: 100;
+	line-height: auto;
+	margin:0 auto;
+	width: 100%;
+}
+input[type=text],input[type=password],input[type=email]{
+	transition: width 0.4s ease-in-out;
+	color: black;
+	font-family: thathuntershit;
+	font-size: 12px;
+	font-weight: 100;
+	width: 10%;
+	margin: 10px;
+}
+input[type=text]:focus,input[type=password]:focus,input[type=email]:focus {
+  width: 30%;
+}
+ul{
+	list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+li {
+  float: left;
+	padding-right: 10px;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 16px;
+	font-family: thathuntershit;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: #8700dc;
+	border-style: solid;
+	border-color: black;
+	box-shadow: 5px 7px 5px #8700dc;
+}
+.nav{
+	float:right;
+}
+.sec1,.sec2,.sec3{
+	text-align: center;
+}
