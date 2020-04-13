@@ -9,13 +9,16 @@
 	font-style: italic;
 }
 .header {
-
-	background-position: center center;
-	background-size: cover;
 	height: auto;
 	width: auto;
-	padding: 10px;
-	z-index: -1;
+	padding-bottom: 100px;
+}
+.header img{
+	margin-right: auto;
+	margin-left: auto;
+	align-items: center;
+	width: auto;
+	height: auto;
 }
 #Service{
 	text-align: left;

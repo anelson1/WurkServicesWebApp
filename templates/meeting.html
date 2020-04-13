@@ -7,7 +7,6 @@
 <body>
   <div class="header">
     <div id="logonshit">
-      <img src="{{ url_for('static', filename='css/img/Wurk2.png') }}" style="width:100px;height:90px;align:right;"</img>
       <div class="nav">
         <ul id = "navbar">
           <li><a href="/">Home</a></li>
@@ -17,9 +16,9 @@
         </ul>
       </div>
     </div>
-    <h1>Wurk</h1>
-    <h2>Work less with Wurk</h2>
-  </div>
+    <img src = "{{ url_for('static', filename='css/img/WurkBan11.jpg') }}"></img>
+</div>
+<h2>Work less with Wurk</h2>
   <div class="box">
     <h3>You have a booking with ID <span style = "color: #8700dc">{{ meetingID }}</span> for {{TOB}} on {{month}} {{day}} starting at {{start}}</h3>
   </div>
