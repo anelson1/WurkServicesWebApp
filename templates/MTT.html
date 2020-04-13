@@ -1,8 +1,8 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Wurk</title>
+  <meta charset="utf-8">
+  <title>Wurk</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 
@@ -12,26 +12,37 @@
     <div id="logonshit">
       <img src="{{ url_for('static', filename='css/img/Wurk2.png') }}" style="width:100px;height:90px;align:right;"</img>
       <div class="nav">
-          <ul id = "navbar">
-            <li><a href="/">Home</a></li>
-            <li><a href="ContactUs">Contact Us</a></li>
-            <li><a href="MeetTheTeam">Meet The Team</a></li>
-            <li><a href="BodyOfWork">Body Of Work</a></li>
-      </ul>
-        </div>
-          </div>
-      <h1>Wurk</h1>
-      <h2>Work less with Wurk</h2>
+        <ul id = "navbar">
+          <li><a href="/">Home</a></li>
+          <li><a href="ContactUs">Contact Us</a></li>
+          <li><a href="MeetTheTeam">Meet The Team</a></li>
+          <li><a href="BodyOfWork">Body Of Work</a></li>
+        </ul>
+      </div>
+    </div>
+    <h1>Wurk</h1>
+    <h2>Work less with Wurk</h2>
 
   </div>
 
   <div class="box">
-    <div id="main">
     <h4>We are Wurk</h4>
     <div class="guy">
-      <img src="{{ url_for('static', filename='css/img/xantheman.jpg') }}" height="1000" width="1000"></img>
+      <h2><img src="{{ url_for('static', filename='css/img/xantheman.jpg') }}" height = "200" width="200">
+        Xander Kazanowski
+        <h3>Founder and CEO of Wurk Services</h3></h2>
+      </div>
+      <div class="guy">
+        <h2><img src="{{ url_for('static', filename='css/img/kyle.jpg') }}" height = "200" width="200">
+          Kyle Powroznyk
+          <h3>Chief Strategy Officer</h3></h2>
     </div>
+    <div class="guy">
+      <h2><img src="{{ url_for('static', filename='css/img/me.png') }}" height = "200" width="200">
+        Angelo Nelson
+        <h3>Chief Technology Officer</h3>
+        <p>Hello! I am Angelo Nelson, I programmed this site!</p></h2>
   </div>
-</div>
-</body>
-</html>
+    </div>
+  </body>
+  </html>
