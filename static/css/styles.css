@@ -71,6 +71,17 @@ a{
 	margin-right: 30px;
 	box-shadow: 5px 5px 10px #8700dc;
 	padding: 5px;
+}
+.createAccountBox{
+	border-style: solid;
+	border-color: black;
+	height: auto;
+	display: block;
+	margin-bottom: 30px;
+	margin-left: 200px;
+	margin-right: 200px;
+	box-shadow: 5px 5px 10px #8700dc;
+	padding: 5px;
 
 }
 .boxMTT{
@@ -215,10 +226,10 @@ p,label{
 	line-height: auto;
 	width: 100%;
 }
-MID{
+.MID{
 	color: #8700dc;
 	font-family: thathuntershit;
-	font-size: 15px;
+	font-size: 20px;
 	font-weight: 100;
 	line-height: auto;
 	margin:0 auto;

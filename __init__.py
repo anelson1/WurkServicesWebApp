@@ -5,10 +5,11 @@ import psycopg2
 import random
 import string
 import os
+import config as cfg
 
 
 app = Flask(__name__, instance_relative_config=True)
-conn = psycopg2.connect(user = "postgres",password = "123",host = "127.0.0.1",port = "5432",database = "test")
+conn = psycopg2.connect(user =cfg.info["user"],password = cfg.info["passwd"],host = cfg.info["host"],port = "5432",database = cfg.info["db"])
 cursor = conn.cursor()
 @app.route("/")
 def hello():

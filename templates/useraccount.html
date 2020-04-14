@@ -7,9 +7,9 @@
     $(".sec1").hide();
     $(".sec2").hide();
     $(".sec3").hide();
-    $(".box2").hide();
+    $(".createAccountBox").hide();
     $(".dostuff").click(function(){
-      $(".box").fadeOut(1000).delay(200).queue(function(next) {$(".box2").fadeIn(1000).delay(200);
+      $(".box").fadeOut(1000).delay(200).queue(function(next) {$(".createAccountBox").fadeIn(1000).delay(200);
     });
     $(".sec1").fadeIn();
     });
@@ -64,11 +64,11 @@
 </div>
 
   </div>
-  <div class="box2">
+  <div class="createAccountBox">
     <form action="/createbooking" method="POST">
       <div class = "sec1">
         <p>Welcome to the Wurk booking creation tool, please enter the name for the booking</p>
-        <input type="text" id="name" name="name" placeholder="First and Last Name">
+        <input type="text" id="name" name="name" placeholder="">
         <button type = "button" class = "btn1">Next</button>
       </div>
       <div class = "sec2">

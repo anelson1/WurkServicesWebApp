@@ -8,7 +8,7 @@
     $(".sec2").hide();
     $(".sec3").hide();
     $(".dostuff").click(function(){
-      $(".box").fadeOut(2000).delay(200).queue(function(next) {$(".box2").fadeIn(2000).delay(200);
+      $(".box").fadeOut(2000).delay(200).queue(function(next) {$(".createAccountBox").fadeIn(2000).delay(200);
     });
     $(".sec1").fadeIn();
     });
@@ -52,7 +52,7 @@
           <img src = "{{ url_for('static', filename='css/img/WurkBan11.jpg') }}"></img>
       </div>
       <h2>Work less with Wurk</h2>
-  <div class="box2">
+  <div class="createAccountBox">
     <form action="/BookingComplete" method="POST">
       <div class = "sec1" style="display: none;">
         <p>Great! {{teacherName}} is available at these times:</p>
