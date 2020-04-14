@@ -4,6 +4,31 @@
 <meta charset="utf-8">
 <title>Wurk</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+  <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    $(function () {
+    var $element = $('.test1');
+    var $element2 = $('.test2');
+    var $element3 = $('.test3');
+    $element2.hide();
+    $element3.hide();
+    setInterval(function () {
+        $element.fadeIn(2000, function () {
+            $element.fadeOut(2000, function () {
+                $element2.fadeIn(2000, function() {
+                  $element2.fadeOut(2000,function(){
+                    $element3.fadeIn(2000,function(){
+                      $element3.fadeOut(2000);
+                    }).delay(4000);
+                  });
+                }).delay(4000);
+            });
+        }).delay(4000);
+    }, 18000);
+});
+  });
+  </script>
 </head>
 
 <body>
@@ -24,19 +49,51 @@
   <h2>Work less with Wurk</h2>
   <div class="box">
     <div id="main">
-    <h3>Please log in to check your booking</h3>
-    <form action="/useraccount" method="POST">
-      <label for="uname">User Name:</label>
-      <input type="text" id="uname" name="uname"><br><br>
-      <label for="password">Password:</label>
-      <input type="password" id="password" name="password"><br><br>
-      <input type="submit" class = "dostuff" value="Login">
-    </form>
+      <h3>We do all odd jobs. Work less with Wurk today!</h3>
+      <p>Wurk connects those seeking services with those offering them. We handle legal, insurance, booking, payment and scheduling. We have a variety of services so if you need absolutely anything reach out to Wurk. We can have the right person for your job at your service expediently. All you need to do is book! Work does all odd jobs so you don’t have to. Work less with Wurk today. Our specialists come to you with competitive pricing to get your job done with utmost satisfaction.</p>
   </div>
   <div class="register">
-    <p>Dont have an account? Register here!</p>
-    <form action="/register"><input type="submit" value="Register"></form>
+    <p>What are you waiting for? Book now!</p>
+    <form action="login"><input type="submit" value="Login"></form>
   </div>
   </div>
+  </div>
+  <div class="information">
+  <div class ="box2">
+    <img src = "{{ url_for('static', filename='css/img/tutor.jpg') }}" height="100%" width="100%"></img>
+    <h3>Tutoring and Coaching</h3>
+    <p>Our team of experienced educators and instructors provides one on one lessons in a plethora of areas ranging from math and computer science to lacrosse and guitar essentials. Click below to log in and create a booking today!</p>
+    <p><a href="login">Book Now!</a></p>
+  </div>
+  <div class ="box3">
+    <img src = "{{ url_for('static', filename='css/img/leavesnshit2.jpg') }}" height="100%" width="100%"></img>
+    <h3>Commercial and Residential Projects</h3>
+    <p>A key component of Wurk's operation is bringing skilled laborers in touch with those in need of their services. From masonary and landscaping to flooring and paving. We can help you build, maintain, and improve your life.</p>
+    <p><a href="login">Book Now!</a></p>
+  </div>
+  <div class ="box4">
+    <img src = "{{ url_for('static', filename='css/img/baby.jpg') }}" height="100%" width="100%"></img>
+    <h3>Home Services</h3>
+    <p>A doctor shouldn't have to do dishes. A lawyer shouldn't clean the foyer. Do what you do best and let us do the rest. Whether you need your responsibilites covered for a well deserved night out, help around the house, or want to throw an executive event, we have people for that. We are a one stop concierges for all your daily or not so daily needs. Improve your workflow today! </p>
+    <p><a href="login">Book Now!</a></p>
+  </div>
+</div>
+<div class=testamonial>
+<h2>Testimonials</h2>
+<div class="test1">
+    <h3>Janine Boduch Vainisi</h3>
+    <p>"I have used the Wurk service on 3 separate occasions. Excellent!! On time, Efficient, hard working, polite. Will not hesitate to call upon them again. They moved furniture for me to my basement, my garage & other rooms. They also assisted me by emptying out a condo I had some decorating items in. They packed it up & delivered to my home. They installed some window screens & changed light bulbs. I am grateful for their excellent work."</p>
+</div>
+<div class="test2">
+    <h3>Charles Oldendorf</h3>
+    <p>"Just from there reviews , they get things done and can free up your month of attempting to get things done by yourself !
+With a crew , stuff gets done ✅ fast !
+Then you don’t have worry or attempt to do it on your schedule."</p>
+</div>
+<div class="test3">
+    <h3>Jessica Stephanie</h3>
+    <p>"Great lacrosse coaching ! Great with kids!"</p>
+</div>
+</div></div>
 </body>
 </html>

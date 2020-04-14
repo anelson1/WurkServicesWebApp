@@ -322,6 +322,9 @@ def SSTP():
 @app.route("/test")
 def test():
     return render_template('test.html')
+@app.route("/login")
+def log():
+    return render_template('login.html')
 if __name__ == "__main__":
     app.run(debug=True)
     #serve(app, listen = '*:80')

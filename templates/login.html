@@ -2,25 +2,42 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Da Testah</title>
+<title>Wurk</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 
 <body>
+
   <div class="header">
-    <div id="header-text">
-      <h1>Welcome to the very shitty Werk Site</h1>
-      <h2>I promise it will look better when i get my money</h2>
-    </div>
+    <div id="logonshit">
+    <div class="nav">
+          <ul id = "navbar">
+            <li><a href="/">Home</a></li>
+            <li><a href="ContactUs">Contact Us</a></li>
+            <li><a href="MeetTheTeam">Meet The Team</a></li>
+            <li><a href="BodyOfWork">Body Of Work</a></li>
+      </ul>
+        </div>
+          </div>
+      <img src = "{{ url_for('static', filename='css/img/WurkBan11.jpg') }}"></img>
   </div>
-  <div id="login">
-    <p>Login to your account</p>
-  <form action="/user" method = "POST">
-  <label for="uname">User Name:</label>
-  <input type="text" id="uname" name="uname"><br><br>
-  <label for="pass">Password:</label>
-  <input type="text" id="pass" name="pass"><br><br>
-  <input type="submit" value="Submit">
-</form>
+  <h2>Work less with Wurk</h2>
+  <div class="box">
+    <div id="main">
+    <h3>Please log in to check your booking</h3>
+    <form action="/useraccount" method="POST">
+      <label for="uname">User Name:</label>
+      <input type="text" id="uname" name="uname"><br><br>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password"><br><br>
+      <input type="submit" class = "dostuff" value="Login">
+    </form>
   </div>
+  <div class="register">
+    <p>Dont have an account? Register here!</p>
+    <form action="/register"><input type="submit" value="Register"></form>
+  </div>
+  </div>
+
 </body>
 </html>
