@@ -8,6 +8,7 @@
 	src: url(font/KozGoPro-Light.otf);
 	font-style: italic;
 }
+
 .header {
 	height: auto;
 	width: auto;
@@ -15,6 +16,26 @@
 }
 a{
 	color:#8700dc
+}
+.button {
+	background-color: white;
+  display: block;
+  text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+  padding: 5px;
+	font-size: 20px;
+	font-family: thathuntershit;
+  text-decoration: none;
+	transition-duration: 0.4s;
+}
+
+.button:hover {
+  color: #8700dc;
+	border-style: solid;
+	border-color: black;
+	box-shadow: 5px 7px 5px #8700dc;
 }
 .header img{
 	margin-right: auto;
@@ -32,7 +53,7 @@ a{
 	margin-right: 300px;
 	margin-left: 300px;
 	box-shadow: 5px 5px 10px #8700dc;
-	padding: 10px;
+	padding: 10px 100px 10px 100px;
 	margin-bottom: 100px;
 	overflow: auto;
 	display: flex;
@@ -71,6 +92,21 @@ a{
 	margin-right: 30px;
 	box-shadow: 5px 5px 10px #8700dc;
 	padding: 5px;
+}
+.box2H, .box3H, .box4H{
+	width: 220px;
+	height: auto;
+	display: block;
+	margin-bottom: 30px;
+	margin-left: 30px;
+	margin-right: 30px;
+	padding: 5px;
+	border-style: solid;
+	border-color: black;
+}
+.box2H:hover, .box3H:hover, .box4H:hover{
+	color: #8700dc;
+	box-shadow: 5px 7px 5px #8700dc;
 }
 .createAccountBox{
 	border-style: solid;
@@ -112,15 +148,19 @@ a{
 	text-align: left;
 	word-wrap: break-word;
 }
-.box2{
+.informationContact {
+	margin-right: 100px;
+	margin-left: 100px;
+	padding: 10px;
+	display: flex;
+	align-items: flex-start;
+	text-align:center;
+
+}
+.box2,.box3,.box4,.box2H,.box3H,.box4H{
 	flex: 1;
 }
-.box3{
-	flex: 1;
-}
-.box4{
-	flex: 1;
-}
+
 #main{
 	text-align: center;
 }
@@ -140,9 +180,10 @@ a{
 .guy{
 	padding-bottom: 50px;
 	height: 200px;
+	margin-right: 60vw;
+	margin-bottom: 20px;
 }
 .guy img{
-margin-right: auto;
 float: left;
 clear: both;
 padding-right: 10px;
@@ -154,10 +195,16 @@ padding-right: 10px;
 .guy h3{
 	text-align: left;
 }
-.guy p{
+.box3H p{
 	text-align: left;
 	font-size: 10px;
 	color: #FFF;
+}
+.guy:hover{
+	color: #8700dc;
+	border-style: solid;
+	border-color: black;
+	box-shadow: 5px 7px 5px #8700dc;
 }
 header.img{
 	width: 10%;
@@ -179,6 +226,7 @@ h2{
 	font-weight: 400;
 	z-index: 1;
 	text-align: center;
+	margin: 0px;
 }
 h3{
 	color: black;
@@ -187,6 +235,8 @@ h3{
 	font-weight: 400;
 	line-height: 60px;
 	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 h5{
 	color: black;
@@ -225,6 +275,7 @@ p,label{
 	font-weight: 100;
 	line-height: auto;
 	width: 100%;
+	text-align: center;
 }
 .MID{
 	color: #8700dc;

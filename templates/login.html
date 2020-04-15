@@ -4,6 +4,8 @@
 <meta charset="utf-8">
 <title>Wurk</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+  <link rel='icon' href="{{ url_for('static', filename='css/img/favicon-32x32.png') }}" type='image/x-icon'/ >
+
 </head>
 
 <body>
@@ -15,7 +17,7 @@
             <li><a href="/">Home</a></li>
             <li><a href="ContactUs">Contact Us</a></li>
             <li><a href="MeetTheTeam">Meet The Team</a></li>
-            <li><a href="BodyOfWork">Body Of Work</a></li>
+
       </ul>
         </div>
           </div>
@@ -30,12 +32,12 @@
       <input type="text" id="uname" name="uname"><br><br>
       <label for="password">Password:</label>
       <input type="password" id="password" name="password"><br><br>
-      <input type="submit" class = "dostuff" value="Login">
+      <input type="submit" class = "button" value="Login">
     </form>
   </div>
   <div class="register">
     <p>Dont have an account? Register here!</p>
-    <form action="/register"><input type="submit" value="Register"></form>
+    <form action="/register"><input type="submit" class = "button" value="Register"></form>
   </div>
   </div>
 
