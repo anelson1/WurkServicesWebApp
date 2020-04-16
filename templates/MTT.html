@@ -5,7 +5,20 @@
   <title>Wurk</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
   <link rel='icon' href="{{ url_for('static', filename='css/img/favicon-32x32.png') }}" type='image/x-icon'/ >
+  <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    var x = 0;
+    $("#panel").hide()
+  $("#me").click(function() {
+    x = x+1;
+    if(x > 20){
+      $("#panel").slideDown("slow");
 
+}
+  });
+});
+  </script>
 </head>
 
 <body>
@@ -50,11 +63,16 @@
         <h3>Chief Marketing Officer</h3></h2>
     </div>
         <div class="box3H">
+          <div id="me">
           <h2><img src="{{ url_for('static', filename='css/img/me.png') }}" height = "100%" width="100%">
           Angelo Nelson
             <h3>Chief Technology Officer</h3>
             </h2>
+            <div id="panel">
+              <p>Hello, I am Angelo Nelson, i developed both the frontend, backend, and database for this website! P.S: Hi Kayla!</p>
       </div>
+    </div>
+    </div>
     <div class="box4H">
       <h2><img src="{{ url_for('static', filename='css/img/someguy.jpg') }}" height = "100%" width="100%">
         Jack Steen
