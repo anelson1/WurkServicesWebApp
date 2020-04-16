@@ -53,7 +53,7 @@ a{
 	margin-right: 300px;
 	margin-left: 300px;
 	box-shadow: 5px 5px 10px #8700dc;
-	padding: 10px 100px 10px 100px;
+	padding: 10px 10px 10px 10px;
 	margin-bottom: 100px;
 	overflow: auto;
 	display: flex;
@@ -121,14 +121,10 @@ a{
 
 }
 .boxMTT{
-	border-style: solid;
-	border-color: black;
-	margin-right: 200px;
-	margin-left: 200px;
-	box-shadow: 5px 5px 10px #8700dc;
+	margin-right: auto;
+	margin-left: auto;
 	padding: 10px;
 	margin-bottom: 100px;
-	overflow: auto;
 	display: flex;
 	flex-direction: column;
 }
@@ -149,8 +145,8 @@ a{
 	word-wrap: break-word;
 }
 .informationContact {
-	margin-right: 100px;
-	margin-left: 100px;
+	margin-right: auto;
+	margin-left: auto;
 	padding: 10px;
 	display: flex;
 	align-items: flex-start;
@@ -160,6 +156,13 @@ a{
 .box2,.box3,.box4,.box2H,.box3H,.box4H{
 	flex: 1;
 }
+.box2 h3,.box3 h3,.box4 h3,.box2H h3,.box3H h3,.box4H h3{
+	font-size: 1em;
+}
+.box2 h2,.box3 h2,.box4 h2,.box2H h2,.box3H h2,.box4H h2{
+	font-size: 2em;
+}
+
 
 #main{
 	text-align: center;
@@ -194,11 +197,6 @@ padding-right: 10px;
 }
 .guy h3{
 	text-align: left;
-}
-.box3H p{
-	text-align: left;
-	font-size: 10px;
-	color: #FFF;
 }
 .guy:hover{
 	color: #8700dc;
